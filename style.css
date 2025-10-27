@@ -1,0 +1,103 @@
+/* base */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: rgb(217, 217, 217);
+    --border-color: solid 1px rgb(170, 170, 170);
+    --font-size-pricipal: 2.5rem
+}
+body{
+    display: flex;
+}
+/* nav */
+/* perfil do usuario */
+nav{
+    background-color: var(--background-color);
+    width: 33.5%;
+}
+.perfil{
+    display: flex;
+    padding: 6px 16px;
+    justify-content: space-between;
+    border: var(--border-color);
+}
+.perfil div{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.perfil img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+/* Text input */
+.pesquisa{
+    padding: 10px;
+    border-bottom:var(--border-color) ;
+    border-left:var(--border-color) ;
+    border-right:var(--border-color) ;
+}
+.pesquisa div{
+    border: var(--border-color);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 3px 12px;
+    gap: 25px;
+}
+.pesquisa div img{
+    height: 30px;
+    width: 30px;
+}
+.pesquisa div input{
+    border: none;
+    font-size: var(--font-size-pricipal);
+    overflow: hidden; /* "overflow" value must be different from "visible" */
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+.pesquisa div input:focus{
+    outline: none;
+}
+
+/* main */
+main{
+    width: 66.5%;
+}
+
+/* header do main */
+.mainHeader{
+    background-color: var(--background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 16px;
+    border-bottom: var(--border-color);
+    border-right: var(--border-color);
+    border-top: var(--border-color);
+}
+.mainHeader div{
+    gap: 12.5px;
+    display: flex;
+    align-items: center;
+}
+.heroProfile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.mainHeader div h2{
+    font-size: var(--font-size-pricipal);
+}
+.bonusInfornmation img{
+    height: 50px;
+    width: 50px;
+    border-radius: 0%;
+}
