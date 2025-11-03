@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <div class="perfil">
-            <img src="./img/profile1.jfif" alt="">
+        <div id="perfil">
+            <!-- <img src="./img/profile1.jfif" alt=""> -->
             <div>
                 <img src="./img/more.png" alt="">
                 <img src="./img/3pontos.png" alt="">
@@ -25,16 +26,26 @@
     </nav>
     <main>
         <div class="mainHeader">
-            <div class="heroProfile">
-                <img src="./img/profile1.jfif" alt="">
-                <h2>Fulano</h2>
-            </div>
+            <div id="heroProfile"></div>
             <div class="bonusInfornmation">
                 <img src="./img/phone.svg" alt="">
                 <img src="./img/camera.png" alt="">
                 <img src="./img/barraVertical.png" alt="">
                 <img src="./img/search.png" alt="">
             </div>
+        </div>
+        <div class="se">
+            <div id="messages Other"></div>
+
+            <div id="messages User"></div>
+        </div>
+        <div id="footer">
+            <img src="./img/sorriso.png" alt="">
+            <div>
+                <input type="text" placeholder="message...">
+                <img src="./img/clip.png" alt="">
+            </div>
+            <img src="./img/microfone.png" alt="">
         </div>
     </main>
 </body>

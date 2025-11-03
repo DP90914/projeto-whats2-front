@@ -7,7 +7,7 @@
 :root{
     --background-color: rgb(217, 217, 217);
     --border-color: solid 1px rgb(170, 170, 170);
-    --font-size-pricipal: 2.5rem
+    --font-size-pricipal: 1.25rem
 }
 body{
     display: flex;
@@ -16,20 +16,21 @@ body{
 /* perfil do usuario */
 nav{
     background-color: var(--background-color);
-    width: 33.5%;
+    width: 25%;
 }
-.perfil{
+#perfil{
     display: flex;
     padding: 6px 16px;
-    justify-content: space-between;
+    justify-content: space-between;    
+    flex-direction: row-reverse;
     border: var(--border-color);
 }
-.perfil div{
+#perfil div{
     display: flex;
-    flex-direction: row;
+
     gap: 12px;
 }
-.perfil img{
+#perfil img{
     height: 50px;
     width: 50px;
     border-radius: 100%;
@@ -57,7 +58,7 @@ nav{
 .pesquisa div input{
     border: none;
     font-size: var(--font-size-pricipal);
-    overflow: hidden; /* "overflow" value must be different from "visible" */
+    overflow: hidden;
     white-space: nowrap;
     width: 100%;
     text-overflow: ellipsis;
@@ -68,13 +69,12 @@ nav{
 
 /* main */
 main{
-    width: 66.5%;
+    width: 75%;
 }
 
 /* header do main */
 .mainHeader{
     background-color: var(--background-color);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,16 +88,68 @@ main{
     display: flex;
     align-items: center;
 }
-.heroProfile img{
+#heroProfile img{
     height: 50px;
     width: 50px;
     border-radius: 100%;
 }
-.mainHeader div h2{
+#mainHeader div h2{
     font-size: var(--font-size-pricipal);
 }
 .bonusInfornmation img{
     height: 50px;
     width: 50px;
     border-radius: 0%;
+}
+/* nav */
+#contatos{
+    background-color: var(--background-color);
+    height: auto;
+}
+#contatos div{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--font-size-pricipal);
+    border: var(--border-color);
+    background-color: white;
+    border-radius: 5px;
+}
+
+#contatos div img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+/* Mensagens */
+#messages{
+    
+}
+/* footer */
+#footer{
+    display: flex;
+    background-color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+}
+#footer img{
+    height: 30px;
+    width: 30px;
+}
+#footer div{
+    border: var(--border-color);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 3px 12px;
+    gap: 25px;
+}
+#footer div input{
+    font-size: var(--font-size-pricipal);
+    border: none;
+}
+#footer div input:focus{
+    outline: none;
 }
